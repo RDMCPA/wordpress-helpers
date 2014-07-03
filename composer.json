@@ -1,7 +1,7 @@
 {
-	"name": "buzzfishmedia/wordpress-helpers",
+	"name": "fmccoy/wordpress-helpers",
 	"version": "0.1.0",
-	"type": "wordpress-plugin",
+	"type": "library",
 	"autoload": {
 		"psr-0": {
 			"WordPress": "src/"
