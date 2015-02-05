@@ -1,7 +1,7 @@
 <?php
 /*
  Plugin Name: Wordpress Helpers Loader
- Plugin URI: https://github.com/fmccoy/wordpress-helpers
+ Plugin URI: https://github.com/RDMCPA/wordpress-helpers
  Description: Loads the helper plugin file.
  Author: Frank McCoy
  Version: 0.0.1

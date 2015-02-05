@@ -1,5 +1,9 @@
 <?php
+/**
+ * Sample File
+ */
 
+/* Check for Autoloader */
 if( file_exists('vendor/autoload.php')) {
 	$define = true;
 } else {
@@ -7,17 +11,36 @@ if( file_exists('vendor/autoload.php')) {
 }
 define('COMPOSERED', $define );
 
+/* Check for Composer */
 if( COMPOSERED != true ){
 	echo "Composer Not Defined";
 	return;
 } 
-
 require_once( 'vendor/autoload.php');
 
-$theme = new WordPress\Theme("grout");
+/* Instantiate new Theme */
+$theme = new WordPress\Theme("THEMENAME");
+
+/* Instantiate new Custom Post Type */
 $cpt = new WordPress\CustomPostType("customer");
 
-echo "<pre>";
-print_r($theme);
-print_r($cpt);
-echo "</pre>";
+?>
+
+<pre>
+
+	<?php
+
+	// Show Theme Details
+	echo "<h2>Theme</h2>";
+	echo print_r($theme);
+
+	// Separate results.
+	echo "<hr />";
+
+	// Show Custom Post Type Details
+	echo "<h2>Custom Post Type</h2>";
+	print_r($cpt);
+	
+	?>
+
+</pre>
